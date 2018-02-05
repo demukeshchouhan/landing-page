@@ -1,0 +1,11 @@
+@mixin box-shadow($args...) {
+	box-shadow: $args;
+}
+
+@mixin clearfix() {
+	&::after{
+		content : "";
+		clear: both;
+		display: table;
+	}
+}
