@@ -61,3 +61,25 @@
 .btn--animated{
 	animation: moveInBottom .5s;
 }
+
+.btn-text{
+	&:link,
+	&:visited{
+		color: $pink-purple;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: .15rem solid $pink-purple;
+		padding: .3rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+		transition: all .3s;
+	}
+
+	&:hover {
+		transform: translateX(5px);
+	}
+
+	&:active{
+
+	}
+}

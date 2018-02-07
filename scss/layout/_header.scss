@@ -27,26 +27,3 @@
 }
 
 
-
-.heading-primary{
-	text-transform: uppercase;
-	color: $primary-heading-color;
-	backface-visibility: hidden;
-
-	&--main{
-		display: block;
-		font-size: 3.5rem;
-		letter-spacing: .5rem;
-		font-weight: 700;
-		text-shadow: 0 .2rem .5rem rgba(51, 51, 51, 0.418);
-		animation: moveInLeft .8s;
-	}
-
-	&--sub{
-		display: block;
-		font-size: 1.5rem;
-		font-weight: 300;
-		letter-spacing: 1.2rem;
-		animation: moveInRight .8s;
-	}
-}
