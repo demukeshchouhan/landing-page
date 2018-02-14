@@ -1,0 +1,146 @@
+.card{
+	width:100%;
+	perspective: 150rem;
+	height: 60rem;
+	position: relative;
+	
+	
+
+	&__front{
+		background-color: #fff;
+		height: 60rem;
+		transition: all .8s ease-in-out;
+		backface-visibility: hidden;
+		position: absolute;
+		top:0;
+		left: 0;
+		width:100%;
+		box-shadow: 0 2rem 5rem rgba(0,0,0,0.111);
+		border-radius: 3px;
+		overflow: hidden;
+	}
+	
+	&__back{
+		height: 60rem;
+		transition: all .8s ease-in-out;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+		position: absolute;
+		top:0;
+		left: 0;
+		width:100%;
+		box-shadow: 0 2rem 5rem rgba(0,0,0,0.211);
+		border-radius: 3px;
+		overflow: hidden;
+	}
+
+	&__back-1{
+		background-image: linear-gradient(to left bottom, rgba($pink-purple-2, .8), rgba($pink-purple, .8));
+	}
+	
+	&__back-2{
+		background-image: linear-gradient(to top, rgba($purple-blue, .8) 70%, rgba($purple-blue, .6));
+	}
+	
+	&__back-3{
+		background-image: linear-gradient(to left bottom, rgba($purple, .8), rgba($purple-light-2, .8));
+	}
+
+	&:hover &__front{
+		transform: rotateY(180deg);
+	}
+	&:hover &__back{
+		transform: rotateY(0deg);
+	}
+
+	&__img{
+		background-size: cover;
+		height: 25rem;
+		background-blend-mode: darken;
+		background-color: $pink-purple ;
+		clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+		border-top-left-radius:.3rem;
+		border-top-right-radius:.3rem;
+		
+		&--1{
+			background-image: url(../img/tour-1.jpeg);
+		}
+
+		&--2{
+			background-image: url(../img/tour-2.jpg);
+		}
+
+		&--3{
+			background-image: url(../img/tour-3.jpeg);
+		}
+	}
+
+	&__heading{
+		position: absolute;
+		top:15rem;
+		right: 0;
+		font-size: 2.4rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: center;
+		width: 100%;
+		color: #fff;
+		z-index: 15;
+		padding: 1rem;
+		
+	}
+
+	&__heading-span{
+
+		&--1{
+			padding: .5rem 1.2rem;
+			box-decoration-break: clone;
+			background-image: linear-gradient(to right top,$pink-purple, darken($pink-purple, 5%)), url(../img/feature-back.jpeg);
+		}
+	}
+
+	&__details {
+		padding: 3rem;
+
+		ul {
+			list-style: none;
+			width: 80%;
+			margin: 0 auto;
+
+			li {
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1rem;
+
+				&:not(:last-child) {
+					border-bottom: .1rem solid #eee;
+				}
+			}
+		}
+	}
+
+	&__cta {
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		text-align: center;
+	}
+
+	&__price-box {
+		text-align: center;
+		margin-bottom: 8rem;
+		color: #fff;
+	}
+
+	&__price-only {
+		font-size: 1.6rem;
+		text-transform: uppercase;
+	}
+
+	&__price-value {
+		font-size: 6rem;
+		font-weight: 100;
+	}
+}

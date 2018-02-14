@@ -1,7 +1,7 @@
 .text-center{
 	width:100%;
 	display: block;
-	text-align: center;
+	text-align: center !important;
 }
 
 .margin-bottom-small{
@@ -16,6 +16,27 @@
 	margin-bottom: 10rem;
 }
 
+.margin-top-large{
+	margin-top: 10rem;
+}
+
+.margin-top-small{
+	margin-top: 2rem;
+}
+
 .min-height-90{
 	min-height: 9rem;
 }
+
+// .abs-rel{
+// 	position: relative;
+// }
+
+// .abs-pos{
+// 	position: absolute;
+// 	z-index: 999;
+
+// 	&-center{
+// 		margin: 0 auto;
+// 	}
+// }

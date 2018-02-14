@@ -6,7 +6,7 @@
 
 .section-features {
 	width:100%;
-	height: 85vh;
+	height: 100%;
 	padding: 20rem 0; 
 	background-image: linear-gradient(to right top,rgba(lighten($pink-purple, 5%), .6) ,rgba(lighten($purple-blue, 5%), .6) ), url(../img/feature-back.jpeg);
 	background-size: cover;
@@ -18,5 +18,36 @@
 
 	& > *{
 		transform: skewY(7deg);
+	}
+}
+
+.section-tours {
+	background-color: $gray-color-1;
+	padding: 45rem 0 10rem 0;
+	margin-top: -30rem;
+}
+
+.section-stories {
+	background-size: cover;
+	padding: 15rem 0;
+	border-top: .1rem solid #eee;
+	position: relative;
+}
+
+.section-book {
+	padding: 15rem 0;
+	background-image: linear-gradient(to right bottom, $purple-blue, $pink-purple-2);
+}
+
+.book {
+	background-image:linear-gradient(105deg, rgba($gray-color-1, .8) 49.8%, transparent 50%) , url("../img/Cloud_Surf.jpg");
+	background-size: cover;
+	border-radius: 3px;
+	height: 55rem;
+	box-shadow: 0 .2rem 4rem rgba(0,0,0,0.2);
+
+	&__form{
+		width: 50%;
+		padding: 6rem;
 	}
 }

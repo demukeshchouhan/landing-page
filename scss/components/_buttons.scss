@@ -1,5 +1,6 @@
 
 .btn{
+	&,
 	&.btn:link,
 	&.btn:visited {
 		display: inline-block;
@@ -11,6 +12,8 @@
 		margin: 3rem 0 0 0;
 		transition: all .5s;
 		position: relative;
+		border: none;
+		cursor: pointer;
 		@include box-shadow(0 1rem 2rem rgba(26, 24, 24, .329));
 	}
 	
@@ -43,16 +46,45 @@
 		opacity: 0;
 	}
 
+	&--big{
+		padding: 2rem 6rem !important;
+		font-size: 1.4rem !important;
+	}
+
+	&--big-2{
+		padding: 4rem 8rem !important;
+		font-size: 2rem !important;
+	}
+
+	&--white{
+		background: #fff;
+		color: #666;
+		position: relative;
+	
+		&::after{
+			background: #fff;
+		}
+	}
+
+	&--primary {
+		background: $pink-purple;
+		color: #fff;
+		position: relative;
+	
+		&::after{
+			background: $pink-purple;
+		}
+	}
+
+
 }
 
-
-.btn--white{
-	background: #fff;
-	color: #666;
-	position: relative;
-
-	&::after{
-		background: #fff;
+.btn--purple {
+	background: $purple;
+	color: #fff;
+	&:focus,
+	&:active{
+		outline: none;
 	}
 }
 
@@ -60,6 +92,7 @@
 
 .btn--animated{
 	animation: moveInBottom .5s;
+	
 }
 
 .btn-text{

@@ -1,0 +1,66 @@
+.story {
+	width: 75%;
+	margin: 0 auto;
+	box-shadow: 0 3rem 6rem rgba(0,0,0,.2);
+	background-color: rgba(#fff, 0.75);
+	border-radius: .3rem;
+	padding: 6rem;
+	padding-left: 6rem;
+	transform: skewX(-12deg);
+
+	& > *{
+		transform: skewX(12deg);
+	}
+
+	&__shape{
+		width: 15rem;
+		height: 15rem;
+		float: left;
+		background: olive;
+		shape-outside: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
+		position: relative;
+		transform: translateX(-3rem) skewX(12deg);
+		backface-visibility: hidden;
+		
+	}
+	&__img{
+		transition: all .3s;
+		backface-visibility: hidden;
+		max-width: 100%;
+		transform: scale(1.4);
+		display: block;
+		filter: blur(0);
+	}
+
+	&__caption {
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.5rem;
+		color: #fff;
+		font-weight: 600;
+		opacity: 0;
+		transition: all .3s;
+		backface-visibility: hidden;
+		
+	}
+
+	&:hover &__caption {
+		opacity: 1;
+		backface-visibility: hidden;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover &__img {
+		transform: scale(1);
+		transition: all .3s;
+		backface-visibility: hidden;
+		filter: blur(10px);
+	}
+
+	
+}
