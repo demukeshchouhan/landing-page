@@ -255,7 +255,7 @@ p {
     background: #EA4F8B; }
 
 .btn--purple {
-  background: #8F56FD;
+  background: #EA4F8B;
   color: #fff; }
   .btn--purple:focus, .btn--purple:active {
     outline: none; }
@@ -550,9 +550,9 @@ p {
     color: #333; }
   .form__input:focus {
     outline: none;
-    -webkit-box-shadow: 0 1rem 2rem rgba(122, 55, 254, 0.3);
-            box-shadow: 0 1rem 2rem rgba(122, 55, 254, 0.3);
-    border-bottom: 0.3rem solid #7A37FE; }
+    -webkit-box-shadow: 0 1rem 2rem rgba(234, 79, 139, 0.3);
+            box-shadow: 0 1rem 2rem rgba(234, 79, 139, 0.3);
+    border-bottom: 0.3rem solid #EA4F8B; }
     .form__input:focus:invalid {
       border-bottom: 0.3rem solid #f92; }
 
@@ -563,7 +563,7 @@ p {
   display: block;
   -webkit-transition: all .3s;
   transition: all .3s;
-  color: #8F56FD; }
+  color: #EA4F8B; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -587,7 +587,7 @@ p {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  border: 0.1rem solid #8F56FD;
+  border: 0.1rem solid #EA4F8B;
   display: inline-block;
   border-radius: 50%;
   position: absolute;
@@ -605,7 +605,7 @@ p {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background: #8F56FD;
+    background: #EA4F8B;
     opacity: 0;
     -webkit-transition: all .3s;
     transition: all .3s; }
@@ -705,8 +705,8 @@ p {
 
 .section-book {
   padding: 15rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#7A37FE), to(#e919d8));
-  background-image: linear-gradient(to right bottom, #7A37FE, #e919d8); }
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(237, 102, 154, 0.6)), to(rgba(139, 80, 254, 0.6)));
+  background-image: linear-gradient(to right top, rgba(237, 102, 154, 0.6), rgba(139, 80, 254, 0.6)); }
 
 .book {
   background-image: linear-gradient(105deg, rgba(247, 247, 247, 0.8) 49.8%, transparent 50%), url("../img/Cloud_Surf.jpg");

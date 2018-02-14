@@ -21,8 +21,8 @@
 
 		&:focus {
 			outline: none;
-			box-shadow: 0 1rem 2rem rgba($purple-blue, .3);
-			border-bottom: .3rem solid $purple-blue;
+			box-shadow: 0 1rem 2rem rgba($pink-purple, .3);
+			border-bottom: .3rem solid $pink-purple;
 			
 			&:invalid {
 				border-bottom: .3rem solid $warning-color;
@@ -38,7 +38,7 @@
 		margin: 1rem 0 1rem 1rem;
 		display: block;
 		transition: all .3s;
-		color: $purple;
+		color: $pink-purple;
 	}
 
 	&__input:placeholder-shown + &__label {
@@ -66,7 +66,7 @@
 	&__radio-button {
 		height: 3rem;
 		width: 3rem;
-		border: .1rem solid $purple;
+		border: .1rem solid $pink-purple;
 		display: inline-block;
 		border-radius: 50%;
 		position: absolute;
@@ -85,7 +85,7 @@
 			top:50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			background: $purple;
+			background: $pink-purple;
 			opacity: 0;
 			transition: all .3s;
 			// transform: scale(.6);

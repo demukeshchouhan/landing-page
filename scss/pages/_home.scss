@@ -36,7 +36,7 @@
 
 .section-book {
 	padding: 15rem 0;
-	background-image: linear-gradient(to right bottom, $purple-blue, $pink-purple-2);
+	background-image: linear-gradient(to right top,rgba(lighten($pink-purple, 5%), .6) ,rgba(lighten($purple-blue, 5%), .6) );
 }
 
 .book {
